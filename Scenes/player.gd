@@ -8,6 +8,9 @@ func _ready():
 	
 func _physics_process(delta):
 	player_movement(delta)
+
+func player():
+	pass
 	
 func player_movement(_delta):
 	
@@ -64,11 +67,11 @@ func play_anim(movement):
 		if movement == 1:
 			anim.play("front_walk")
 		elif  movement == 0:
-			anim.play("side_front")
+			pass
 			
 	if dir == "up":
 		anim.flip_h = false
 		if movement == 1:
 			anim.play("back_walk")
 		elif  movement == 0:
-			anim.play("side_back")
+			pass
